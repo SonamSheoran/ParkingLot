@@ -48,7 +48,7 @@ public class ParkingLot {
         }
         this.map1 = new HashMap<String, Car>();
         this.map2 = new HashMap<String, String>();
-       // this.map3 = new HashMap<String, ArrayList<String>>();
+        this.map3 = new HashMap<String, ArrayList<String>>();
         this.map4 = new HashMap<String, Car>();
         System.out.println("Created parking lot with " + lotCount + " slots");
         System.out.println();

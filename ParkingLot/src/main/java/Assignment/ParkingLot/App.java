@@ -22,7 +22,7 @@ public class App
                     if (inputString.equalsIgnoreCase("exit")) {
                         break;
                     } else if ((inputString == null) || (inputString.isEmpty())) {
-                        // Do nothing
+                        System.out.println("Please provide valid Input");
                     } else {
                         inputParser.parseTextInput(inputString.trim());
                     }

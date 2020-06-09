@@ -68,15 +68,15 @@ public class ParkingLot {
             this.map1.put(slot, car);
             this.map2.put(regNo, slot);
             this.map4.put(regNo, car);
-            if (this.map3.containsKey(regNo)) {
-                ArrayList<String> regNoList = this.map3.get(regNo);
-                this.map3.remove(regNo);
-                regNoList.add(regNo);
-                this.map3.put(regNo, regNoList);
+            if (this.map3.containsKey(slot)) {
+                ArrayList<String> regNoList = this.map3.get(slot);
+                this.map3.remove(slot);
+                regNoList.add(slot);
+                this.map3.put(slot, regNoList);
             } else {
                 ArrayList<String> regNoList = new ArrayList<String>();
-                regNoList.add(regNo);
-                this.map3.put(regNo, regNoList);
+                regNoList.add(slot);
+                this.map3.put(slot, regNoList);
             }
             System.out.println("Allocated slot number: " + slot);
             System.out.println();

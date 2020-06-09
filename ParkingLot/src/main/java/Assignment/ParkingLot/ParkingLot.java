@@ -29,9 +29,9 @@ public class ParkingLot {
     Map<String, Car> map1;
     // Map of RegNo, Slot
     Map<String, String> map2;
-    // Map of Color, List of RegNo
-    Map<String, ArrayList<String>> map3;
-    
+    // Map of slot, List of RegNo
+   Map<String, ArrayList<String>> map3;
+    // MAp of regNo, car
     Map<String,Car> map4;
 
 
@@ -48,7 +48,7 @@ public class ParkingLot {
         }
         this.map1 = new HashMap<String, Car>();
         this.map2 = new HashMap<String, String>();
-        this.map3 = new HashMap<String, ArrayList<String>>();
+       // this.map3 = new HashMap<String, ArrayList<String>>();
         this.map4 = new HashMap<String, Car>();
         System.out.println("Created parking lot with " + lotCount + " slots");
         System.out.println();
